@@ -1,0 +1,12 @@
+Proxy.config.js file 
+I have declared the port 9696 in this file and the API end point
+
+And made changeOrigin=true
+Mention it in package.json file
+
+"scripts":{
+   "start": "ng serve  --  -- proxy-config ./proxy.config.js"
+}
+
+if we directly call the API from service, it will result in CORS error.
+Hence, we have create a proxy in front end
